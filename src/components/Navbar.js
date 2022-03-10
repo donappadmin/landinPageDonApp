@@ -31,7 +31,7 @@ const Navbar = () => {
         >
           <ul className="navbar-nav justify-content-between">
             <li className="nav-item li-header">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#nosotros">
                 Nosotros
               </a>
             </li>
@@ -40,18 +40,22 @@ const Navbar = () => {
                 Requisitos
               </a>
             </li>
+
+            <li className="nav-item li-header">
+              <a className="nav-link" href="#">
+                Servicios
+              </a>
+            </li>
+            <li className="nav-item li-header ">
+              <a className="nav-link" href="https://www.don-app.com.mx/">
+                Aviso de privacidad
+              </a>
+            </li>
             <li className="nav-item li-header">
               <a className="nav-link" href="#">
                 Preguntas frecuentes
               </a>
             </li>
-            <li className="nav-item li-header ">
-            <a className="nav-link" href="https://www.don-app.com.mx/">
-                Aviso de privacidad
-              </a>
-            </li>
-           
-            
           </ul>
         </div>
       </div>

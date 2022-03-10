@@ -3,28 +3,27 @@ import "../styles/footer.scss";
 import face from "../assets/social-f.png";
 import insta from "../assets/social-i.png";
 import mail from "../assets/social-m.png";
+import whats from "../assets/social-w.png";
 const Footer = () => {
   return (
     <div className="contain-footer">
       <div className="cosa">
-        <h6>Síguemos en nuestras redes sociales:</h6>
-        <ul className="navbar-nav justify-content-between">
-          <li className="nav-item li-header">
-            <a className="nav-link" href="#">
-            <img className="social" src={face} />
-            </a>
-          </li>
-          <li className="nav-item li-header">
-            <a className="nav-link" href="#">
-            <img className="social" src={insta} />
-            </a>
-          </li>
-          <li className="nav-item li-header">
-            <a className="nav-link" href="#">
-            <img className="social" src={mail} />
-            </a>
-          </li>
-        </ul>
+        <h6>Síguenos en nuestras redes sociales:</h6>
+        
+        <div className="link-img">
+          <a className="nav-link" href="https://www.facebook.com/VendeConDonApp">
+            <img className="social" alt='icon-face'src={face} />
+          </a>
+          <a className="nav-link" href="#">
+            <img className="social" alt='icon-insta' src={insta} />
+          </a>
+          <a className="nav-link" href="info@don-app.com.mx">
+            <img className="social" alt='icon-mail' src={mail} />
+          </a>
+          <a className="nav-link" href="">
+            <img className="social" alt='icon-whats' src={whats} />
+          </a>
+        </div>
         <div class="liquid"></div>
       </div>
     </div>

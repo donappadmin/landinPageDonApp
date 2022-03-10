@@ -1,5 +1,5 @@
 import "./App.css";
-import Body from "./components/Body";
+import BodyPage from "./components/BodyPage";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
@@ -8,12 +8,11 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="col-md-12">
-        <Body />
+        <BodyPage />
       </div>
       <div className="col-md-12">
-      <Footer />
+        <Footer />
       </div>
-     
     </div>
   );
 }

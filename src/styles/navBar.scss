@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+$main_1: #6533ff;
+//font-family: 'Montserrat', sans-serif;
+.container-fluid{
+    background-color: $main_1;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    width: 12rem;
+ 
+    margin:0.8rem 3rem 0.8rem 2rem; ;
+
+}
+.li-header{
+    margin: 0 2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 1200px) {
+    .li-header{
+       font-size: 1.25rem;
+    }
+}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../styles/navBar.scss";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -10,6 +12,7 @@ const Navbar = () => {
       className="navbar navbar-dark navbar-expand-lg bg-primary py-0 fixed-top"
     >
       <div className="container-fluid">
+        <img className="logo" src={logo} />
         <button
           className="custom-toggler navbar-toggler"
           type="button"
@@ -29,18 +32,27 @@ const Navbar = () => {
           <ul className="navbar-nav justify-content-between">
             <li className="nav-item li-header">
               <a className="nav-link" href="#">
-                Home
+                Nosotros
               </a>
             </li>
-
             <li className="nav-item li-header">
               <a className="nav-link" href="#">
-                Pickup
+                Requisitos
               </a>
             </li>
+            <li className="nav-item li-header">
+              <a className="nav-link" href="#">
+                Preguntas frecuentes
+              </a>
+            </li>
+            <li className="nav-item li-header ">
+            <a className="nav-link" href="https://www.don-app.com.mx/">
+                Aviso de privacidad
+              </a>
+            </li>
+           
+            
           </ul>
-
-          <button id="btnLogOut">Cerrar</button>
         </div>
       </div>
     </nav>

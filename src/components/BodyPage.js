@@ -1,9 +1,13 @@
 import React from "react";
 import "../styles/bodyPage.scss";
 import dongif from "../assets/dongif.gif";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const BodyPage = () => {
   return (
+    <>
+    <Navbar />
     <div className="contain-body">
       <a name="nosotros">
         <h1 className="section-title">¿Qué es Don App?</h1>
@@ -24,6 +28,8 @@ const BodyPage = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

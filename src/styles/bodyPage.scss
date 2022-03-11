@@ -33,68 +33,67 @@ $backgroundgray: #f1efef;
   font-family: "Montserrat", sans-serif;
   //background:linear-gradient(15deg, #00a9f1, #cf00f1);
   //background-color: #16723d;
-}
-.section-title {
-  text-align: left;
-  margin-left: 3rem;
-  color:#c4bf1a;
-  font-size: 35px;
-}
 
-.section1{
-    display: inline-flex;
-}
-.contenido {
-  background: linear-gradient(15deg, #00a9f100, #5b535c42);
-  width: 60%;
-  margin: 2rem;
- border-radius:67% 33% 75% 25% / 26% 66% 34% 74% ;
-
-  .section-text {
-    text-align: justify;
-    margin: 1rem 2rem;
-    font-size: 25px;
-    color: rgb(61, 61, 61);
-  }
-  .section-text:focus {
-    color: rgb(148, 30, 30);
-  }
-}
-.img-gif {
-  width: 40%;
-  .img-home {
-    width: 20em;
-  }
-}
-
-
-@media (max-width: 1200px) {
   .section-title {
-    text-align: center;
-    margin:1rem 0rem;
+    text-align: left;
+    margin-left: 3rem;
+    color: #c4bf1a;
+    font-size: 35px;
   }
-  .section1{
-    display: inline;
-}
-  
 
-  .contenido {
-    background: none;
-    width: 100%;
-    margin:1rem 0rem;
-   border-radius:67% 33% 75% 25% / 26% 66% 34% 74% ;
-  
-   .section-text {
-    margin: 1rem 2rem;
-    text-align: center;
+  .section1 {
+    display: inline-flex;
   }
-    
+  .contenido {
+    background: linear-gradient(15deg, #00a9f100, #5b535c42);
+    width: 70%;
+    margin: 2rem;
+    border-radius: 67% 33% 75% 25% / 26% 66% 34% 74%;
+
+    .section-text {
+      text-align: justify;
+      margin: 1rem 2rem;
+      font-size: 25px;
+      color: rgb(61, 61, 61);
+    }
+    .section-text:focus {
+      color: rgb(148, 30, 30);
+    }
   }
   .img-gif {
-    width: 80%;
+    width: 30%;
     .img-home {
       width: 20em;
     }
   }
-  
+}
+
+@media (max-width: 1200px) {
+  .contain-body {
+    .section-title {
+      text-align: center;
+      margin: 1rem 0rem;
+    }
+    .section1 {
+      display: inline;
+    }
+
+    .contenido {
+      background: none;
+      width: 100%;
+      margin: 1rem 0rem;
+      border-radius: 67% 33% 75% 25% / 26% 66% 34% 74%;
+
+      .section-text {
+        margin: 1rem 2rem;
+        text-align: center;
+      }
+    }
+    .img-gif {
+      width: 80%;
+      .img-home {
+        width: 20em;
+      }
+    }
+  }
 }

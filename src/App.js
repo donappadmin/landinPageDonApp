@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<BodyPage />} />
 
-        <Route path="avisoprivacidad" element={<Privacity />} />
+        <Route path="/avisoprivacidad" element={<Privacity />} />
 
         <Route path="*" element={<ErrorPage />} />
       </Routes>

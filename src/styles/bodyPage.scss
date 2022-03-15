@@ -28,13 +28,16 @@ $transparent: transparent;
 $statusBar: #541dff;
 $backgroundgray: #f1efef;
 
+body {
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100vh;
+}
 .contain-body {
   margin-top: 5rem;
   font-family: "Montserrat", sans-serif;
-  //background:linear-gradient(15deg, #00a9f1, #cf00f1);
-  //background-color: #16723d;
 
-  .section-title {
+  .section-title1 {
     text-align: left;
     margin-left: 3rem;
     color: #c4bf1a;
@@ -44,11 +47,13 @@ $backgroundgray: #f1efef;
   .section1 {
     display: inline-flex;
   }
-  .contenido {
-    background: linear-gradient(15deg, #00a9f100, #5b535c42);
+
+  .contenido1 {
+    background: linear-gradient(to right, #b19ffc, #8cddf9);
     width: 70%;
     margin: 2rem;
-    border-radius: 67% 33% 75% 25% / 26% 66% 34% 74%;
+    border-left: 15px solid #541dff;
+    border-radius: 0px 50px 50px 0px;
 
     .section-text {
       text-align: justify;
@@ -66,8 +71,44 @@ $backgroundgray: #f1efef;
       width: 20em;
     }
   }
-}
 
+.section-title2 {
+  text-align: right;
+  margin-right: 3rem;
+  color: #c4bf1a;
+  font-size: 35px;
+}
+.section2 {
+  display: inline-flex;
+}
+.contenido2 {
+  background: linear-gradient(to right, #8cddf9,#b19ffc);
+  width: 70%;
+  margin: 2rem;
+  //display: flex;
+  float: right;
+
+  border-right: 15px solid #541dff;
+  border-radius: 50px 0px 0px 50px;
+
+  .section-text {
+    text-align: justify;
+    margin: 1rem 2rem;
+    font-size: 25px;
+    color: rgb(61, 61, 61);
+  }
+  .section-text:focus {
+    color: rgb(148, 30, 30);
+  }
+}
+.img-gif-right {
+  width: 30%;
+  //float: left;
+  .img-home {
+    width: 20em;
+  }
+}
+}
 @media (max-width: 1200px) {
   .contain-body {
     .section-title {
@@ -82,7 +123,6 @@ $backgroundgray: #f1efef;
       background: none;
       width: 100%;
       margin: 1rem 0rem;
-      border-radius: 67% 33% 75% 25% / 26% 66% 34% 74%;
 
       .section-text {
         margin: 1rem 2rem;

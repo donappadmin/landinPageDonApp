@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav
       id="mainNavbar"
-      className="navbar navbar-dark navbar-expand-lg bg-primary py-0 fixed-top"
+      className="navbar navbar-light navbar-expand-lg bg-primary py-0 fixed-top"
     >
       <div className="container-fluid">
         <img className="logo" src={logo} />
@@ -30,11 +30,11 @@ const Navbar = () => {
           id="collapseNavMenu"
         >
           <ul className="navbar-nav justify-content-between">
-            <li className="nav-item li-header">
+            {/*<li className="nav-item li-header">
               <a className="nav-link" href="#nosotros">
                 Nosotros
               </a>
-            </li>
+            </li>*/}
             <li className="nav-item li-header">
               <a className="nav-link" href="#requisitos">
                 Requisitos

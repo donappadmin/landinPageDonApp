@@ -47,7 +47,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item li-header ">
-              <a className="nav-link" href="https://www.don-app.com.mx/">
+              <a className="nav-link" href="/avisoprivacidad">
                 Aviso de privacidad
               </a>
             </li>

@@ -32,7 +32,7 @@ body {
   position: relative;
   padding-bottom: 6rem;
   min-height: 100vh !important;
-  background-color: $main_1 !important;
+  background-color: #6633ffe3 !important;
   font-family: "Varela Round", sans-serif !important;
 }
 .img-body {
@@ -45,12 +45,13 @@ body {
   border-left: 15px solid #ffffff;
   margin-top: 10rem;
   padding-left: 1.5rem;
-  text-shadow: 0.1em 0.01em rgba(51, 51, 51, 0.397);
-  span {
+  text-shadow: 0.1em 0.01em rgba(51, 51, 51, 0.247);
+  
+  p {
     font-size: 20px;
-    font-style: italic;
-    color: #2beba1;
+    color: #c4bf1a;
     text-shadow: none;
+    padding: 2rem;
   }
 }
 
@@ -65,21 +66,49 @@ body {
   width: 20rem;
   border-radius: 20px;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.582)); 
-  margin: 11rem 6rem 10rem 7rem;
+  margin: 6rem 6rem 6rem 7rem;
 }
 .title-r{
   text-align: center;
   color: white;
   margin-top: 10rem;
   padding-left: 1.5rem;
-  text-shadow: 0.1em 0.01em rgba(51, 51, 51, 0.397);
+  //text-shadow: 0.1em 0.01em rgba(51, 51, 51, 0.397);
   
 }
 .list{
   font-size: 20px;
-  color: #b19ffc;
+  color: #ffffff;
   margin-left: 5rem;
   padding: 1rem;
+  line-height: 2;
+}
+.title-pasos{
+  text-align: center;
+  color: white;
+  margin: 3rem 1rem;
+  //padding-bottom: 2rem;
+  transition: all 1s ease-out;
+
+}
+.title-pasos:hover{
+  color: #c4bf1a;
+  text-shadow: 0.1em 0.01em rgba(51, 51, 51, 0.247);
+
+}
+
+.pasos{
+  margin: 4rem auto 10rem;
+  display: block;
+  max-width: 80rem;
+  transition: all 1s ease-out;
+  
+}
+.pasos:hover{
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.582)); 
+}
+.pasoM{
+display:none;
 }
 @media (max-width: 1200px) {
   .img-body {
@@ -113,9 +142,19 @@ body {
   }
   .list{
     font-size: 20px;
-    color: #b19ffc;
-    margin: 1rem;
+    color: #daacf5;
+    margin: 2rem;
     padding: 1rem;
   }
-    
+  
+  .pasoM{
+    display:block;
+    width: 20rem;
+    margin: 4rem auto 4rem;
+    }
+    .pasos{
+     
+      display: none;
+     
+    }
 }

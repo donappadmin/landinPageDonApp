@@ -80,6 +80,11 @@ const BodyPage = () => {
             <img className="serviciosM" alt="servicios" src={serviciosM} />
           </div>
           {/*Preguntas frecuentes*/}
+          <a name="preguntas">
+              <h1 className="title-pasos">
+                Preguntas frecuentes
+              </h1>
+            </a>
           <section>
             <div className="col-md-12 acordion">
               <div className="container-question">

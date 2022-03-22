@@ -30,11 +30,7 @@ const Navbar = () => {
           id="collapseNavMenu"
         >
           <ul className="navbar-nav justify-content-between">
-            {/*<li className="nav-item li-header">
-              <a className="nav-link" href="#nosotros">
-                Nosotros
-              </a>
-            </li>*/}
+           
             <li className="nav-item li-header">
               <a className="nav-link" href="#requisitos">
                 Requisitos
@@ -46,16 +42,17 @@ const Navbar = () => {
                 Servicios
               </a>
             </li>
+            <li className="nav-item li-header">
+              <a className="nav-link" href="#preguntas">
+                Preguntas frecuentes
+              </a>
+            </li>
             <li className="nav-item li-header ">
               <a className="nav-link" href="/avisoprivacidad">
                 Aviso de privacidad
               </a>
             </li>
-            <li className="nav-item li-header">
-              <a className="nav-link" href="#">
-                Preguntas frecuentes
-              </a>
-            </li>
+            
           </ul>
         </div>
       </div>

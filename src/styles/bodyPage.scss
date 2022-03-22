@@ -31,7 +31,7 @@ $backgroundgray: #f1efef;
 body {
   position: relative;
   padding-bottom: 6rem;
-  min-height: 100vh !important;
+  //min-height: 100vh !important;
   background-color: #6633ffe3 !important;
   font-family: "Varela Round", sans-serif !important;
   box-sizing: inherit;
@@ -119,7 +119,7 @@ body {
 }
 section {
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +127,8 @@ section {
   .container-question {
     width: 100%;
     max-width: 80rem;
-    margin: 0 auto;
+    margin: 0 auto 7rem;
+   
     padding: 0 1.5rem;
   }
   .acordion-item {
@@ -139,9 +140,9 @@ section {
   }
   .acordion-link {
     font-size: 1.6rem;
-    color: #c4bf1a;
+    color: #ffffff;
     text-decoration: none;
-    background-color: #09064f;
+    background-color: #2fb1ea;
     width: 100%;
     display: flex;
     align-items: center;
@@ -159,23 +160,23 @@ section {
     max-height: 0;
     overflow: hidden;
     position: relative;
-    background-color: #78cc8f;
+    background-color: #8cddf9;
     transition: max-height 650ms;
   }
   .answer::before {
     content: "";
     position: absolute;
     width: 0.6rem;
-    height: 90%;
-    background-color: #1b7e35;
+    height: 100%;
+    background-color: #6633ffe3;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
   }
   .answer p {
     font-size: 1.4rem;
-    color: #daacf5;
-    padding: 2rem;
+    color: #6633ffe3;
+    padding: 1rem;
   }
   .acordion-item:target .answer {
     max-height: 20rem;
@@ -189,6 +190,9 @@ section {
 }
 
 @media (max-width: 1200px) {
+  body {
+    min-height: 200vh !important;
+  }
   .img-body {
     width: 20rem;
     margin: 10rem 1rem 1rem 1rem;
@@ -236,10 +240,17 @@ section {
     display: none;
   }
   .serviciosM {
-    margin: 4rem auto 10rem;
+    margin: 4rem auto 2rem;
     display: block;
     max-width: 20rem;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.582));
     display: block;
+  }
+  .acordion-link {
+    font-size: 1.2rem !important;
+    padding: 0.5rem 0 !important;
+  }
+  .answer p {
+    font-size: 1.2rem !important;
   }
 }

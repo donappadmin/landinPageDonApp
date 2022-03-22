@@ -42,7 +42,7 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item li-header">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#servicios">
                 Servicios
               </a>
             </li>

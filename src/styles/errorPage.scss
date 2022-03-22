@@ -1,0 +1,35 @@
+.errorPage {
+  background-image: url(https://i.ibb.co/GxvY6W5/fondo.png);
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: hidden;
+  .title-error {
+    text-align: center;
+    margin: 2rem;
+  }
+  .identificador-error {
+    width: 250px;
+
+    display: block;
+    margin: 3rem auto 1rem auto;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  }
+  #link-cont {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .linkHome {
+    background-color: #ef2b43;
+    color: #fff;
+    padding: 10px;
+
+    text-decoration: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}

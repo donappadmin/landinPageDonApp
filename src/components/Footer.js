@@ -20,7 +20,7 @@ const Footer = () => {
           <a className="nav-link" href="info@don-app.com.mx">
             <img className="social" alt='icon-mail' src={mail} />
           </a>
-          <a className="nav-link" href="">
+          <a className="nav-link" href="https://api.whatsapp.com/send?phone=523125933452&app=facebook&entry_point=page_cta&fbclid=IwAR0tYQ50CncCXjDUjyoGLvFbmhJ7fBTCkMJmdl5P95bg83nVe9wx1SrGqx0">
             <img className="social" alt='icon-whats' src={whats} />
           </a>
         </div>

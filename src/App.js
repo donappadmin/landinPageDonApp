@@ -3,19 +3,26 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Privacity from "./components/Privacity";
 import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home";
-
+import Tiket from "./components/Tiket";
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools'
 
 function App() {
+  const queryClient = new QueryClient();
+  
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="/avisoprivacidad" element={<Privacity />} />
-
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/avisoprivacidad" element={<Privacity />} />
+          <Route path="/tiket/:store/:id" element={<Tiket />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </BrowserRouter>
+      <ReactQueryDevtools />
+    </QueryClientProvider>
   );
 }
 

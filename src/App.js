@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Privacity from "./components/Privacity";
 import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home";
-import Tiket from "./components/Tiket";
+import Ticket from "./components/Ticket";
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools'
 
@@ -17,7 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/avisoprivacidad" element={<Privacity />} />
-          <Route path="/tiket/:store/:id" element={<Tiket />} />
+          {/*<Route path="/ticket/:store/:id" element={<Ticket />} />*/}
+          <Route path="/ticket" element={<Ticket />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

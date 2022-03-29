@@ -2,8 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useQuery, useQueryClient } from "react-query";
 import { fetchTx } from "../services/tiket";
-import "../styles/ticket.scss";
+//import "../styles/ticket.scss";
 import logo from "../assets/logo-icon.png";
+import { Document, Page, Text, View, Image } from "@react-pdf/renderer";
 
 const Ticket = () => {
   const { store, id } = useParams();

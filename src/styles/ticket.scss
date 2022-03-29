@@ -1,0 +1,61 @@
+.container-ticket {
+  background-color: white;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.container-title-ticket {
+  .logo-ticket {
+    width: 6rem;
+    margin: 2rem;
+  }
+  h1 {
+    float: left;
+    margin: 2.5rem 2rem 2rem 2rem;
+    font-weight: bold;
+    color: #a58ffd;
+  }
+}
+
+hr {
+  border: 0;
+  height: 3px !important;
+  background-image: linear-gradient(
+    to right,
+    #f0f0f0,
+    #6533ff,
+    #ef2b43,
+    #f0f0f0
+  );
+  margin: 3rem;
+}
+.ticket-data{
+  color:#ef2b43;
+    text-align: center;
+padding: .5rem;
+}
+
+.data-div{
+    color:#6533ff;
+    text-align: center;
+    padding: .5rem;
+}
+@media (max-width: 1200px) {
+    .container-ticket {
+       min-height: 50rem;
+      }
+    .container-title-ticket {
+        .logo-ticket {
+          width: 8rem;
+          margin: 1rem auto;
+          display: block;
+        }
+        h1 {
+        text-align: center;
+          margin: 1rem auto;
+          font-weight: bold;
+          color: #a58ffd;
+        }
+      }
+}

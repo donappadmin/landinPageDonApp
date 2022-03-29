@@ -28,9 +28,9 @@ const Ticket = () => {
         <br/> 
         {transaction && (
           <>
-            <div className="data-div"><h5>Ticket: {transaction.request.upc}</h5></div>
-            <div className="data-div"><h5>Autorización: {transaction.auth}</h5></div>
-            <div className="data-div"><h5>Teléfono: {transaction.input}</h5></div>
+            <div className="data-div"> <h5>Ticket: {transaction.request.upc}</h5></div>
+            <div className="data-div"> <h5>Autorización: {transaction.auth}</h5></div>
+            <div className="data-div"> <h5>Teléfono: {transaction.input}</h5></div>
           </>
         )}
       </div>
